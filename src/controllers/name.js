@@ -1,9 +1,10 @@
-module.exports = "hexianqing";
+// module.exports = "hexianqing";
 
 //ES6
 //export const name = "hexianqing"
 
 module.exports = {
-    name : 'hexianqing',
+    // name : 'hexianqing',
     //return new Promise()
+   
 }
