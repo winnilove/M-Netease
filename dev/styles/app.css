@@ -799,9 +799,16 @@ main {
     flex: 1;
     justify-content: center;
     align-items: center; }
-    .head .topSearchIpt span {
-      font-size: .186665rem;
-      background-color: #ededed; }
+    .head .topSearchIpt a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      line-height: .37333rem;
+      color: #666; }
+      .head .topSearchIpt a span {
+        font-size: .186665rem;
+        background-color: #ededed; }
   .head .loginBtn {
     width: .493335rem;
     height: .266665rem;
@@ -832,8 +839,19 @@ main {
       width: auto; }
       .navCon nav ul li a {
         line-height: 30px;
+        display: block;
+        height: 30px;
         color: #333;
-        font-size: 14px; }
+        font-size: 14px;
+        height: 30px;
+        border-bottom: 1px solid transparent; }
+
+.navActive {
+  color: #b4282d !important;
+  border-bottom: 2px solid #b4282d !important; }
+
+.fnavActive i, .fnavActive a {
+  color: #b4282d !important; }
 
 .navdown {
   width: 50px;
@@ -902,7 +920,8 @@ main {
       .footnav div a i {
         font-size: 20px;
         height: 25px;
-        color: #333; }
+        color: #333;
+        margin-right: 0px; }
 
 .m-indexServicePolicy {
   width: 100%;
@@ -1089,3 +1108,107 @@ main {
 
 .a4 {
   background-image: url(http://yanxuan.nosdn.127.net/3bf5a8a2f6eef284ecb40806ae9ce043.png?imageView&thumbnail=343y260&enlarge=1); }
+
+.searHeader {
+  height: 50px;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 2%;
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+  z-index: 99; }
+  .searHeader .inp {
+    flex: 1;
+    display: flex;
+    height: 30px;
+    flex-flow: row nowrap;
+    background: #f4f4f4;
+    border-radius: 3px; }
+    .searHeader .inp input {
+      border: none;
+      background: #f4f4f4;
+      line-height: 30px;
+      font-size: 14px;
+      color: #666; }
+    .searHeader .inp i {
+      line-height: 30px;
+      font-size: 18px;
+      padding-left: 8px; }
+  .searHeader a {
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px; }
+
+.searCon {
+  flex: 1;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+  background-color: #fff; }
+  .searCon .his {
+    height: 80px;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 0 10px; }
+    .searCon .his span {
+      color: #666;
+      font-size: 14px;
+      line-height: 30px; }
+  .searCon .sbody {
+    height: 150px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 0 10px; }
+    .searCon .sbody span {
+      color: #666;
+      font-size: 12px;
+      line-height: 28px; }
+  .searCon .postRes {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 10px; }
+    .searCon .postRes li {
+      height: 50px;
+      border-bottom: 1px solid #f4f4f4; }
+      .searCon .postRes li a {
+        color: #666;
+        font-size: 14px;
+        line-height: 50px; }
+
+.search {
+  display: flex;
+  flex-flow: column wrap;
+  overflow: scroll; }
+
+.searlistCon {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 10px;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-color: #fff;
+  overflow: scroll; }
+  .searlistCon .slcon {
+    width: 49%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap; }
+    .searlistCon .slcon img {
+      width: 100%; }
+    .searlistCon .slcon p {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      line-height: 20px; }
+    .searlistCon .slcon span {
+      color: red; }
+
+.sList:hover {
+  background-color: #eee; }

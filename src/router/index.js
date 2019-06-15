@@ -4,6 +4,9 @@ import details from '../controllers/details'
 import classes from '../controllers/classes'
 import carts from '../controllers/carts'
 import error from '../controllers/error'
+import people from '../controllers/people'
+import goods from '../controllers/goods'
+import search from '../controllers/search'
 
 
 export default class Router {
@@ -17,8 +20,12 @@ export default class Router {
       '/index': index,
       '/index/home': home,
       '/index/details': details,
+      '/index/search': search,
       '/index/home/classes': classes,
       '/index/home/carts': carts,
+      '/index/home/goods': goods,
+      '/index/home/people': people,
+
     }
     
     // 组件挂载根元素
@@ -31,7 +38,6 @@ export default class Router {
   }
 
   init() {
-    console.log(location.pathname)
     this.loadView(location.pathname);
     if (this.mode === 'hash') {
       window.addEventListener('load', this.hashRefresh.bind(this), false);
@@ -48,7 +54,6 @@ export default class Router {
    */
   bindLink() {
     $('.footnav').on('click','a',this.handleLink.bind(this))
-   
   }
   /**
    * history 处理a链接
@@ -59,7 +64,7 @@ export default class Router {
     // 获取元素路径属性
     let tar = $(e.target).parent();
     let href = tar.attr('href')
-    console.log(href)
+    
     // 对非路由链接直接跳转
     if (href.slice(0, 1) !== '#') {
       window.location.href = href
@@ -69,7 +74,6 @@ export default class Router {
         path: path
       }, null, path)
       // 加载相应页面
-
       this.loadView(path.split('?')[0])
     }
   }
@@ -80,10 +84,13 @@ export default class Router {
   hashRefresh(e) {
     // console.log(e)
     if (e.newURL) {
-      var newURL = e.newURL.split('#')[1];
+     // console.log(e.newURL);//http://localhost:8080/#/index/home/classes
+
+      var newURL = e.newURL.split('#')[1];//  /index/home/classes
       var oldURL = e.oldURL.split('#')[1];
     }
     // 获取当前路径,默认'/index'
+    //console.log(location.hash);#/index/home/classes
     var currentURL = location.hash.slice(1).split('?')[0] || '/index/home';
     this.loadView(currentURL)
   }
@@ -114,11 +121,11 @@ export default class Router {
     // 多级链接拆分为数组,遍历依次加载
     this.currentURLlist = currentURL.slice(1).split('/')
     this.url = ""
-    
+    //console.log(this.currentURLlist)
     this.currentURLlist.forEach((item, index) => {
       // 导航菜单激活显示
-      if (index === 0) {
-        // this.navActive(item)
+      if (index === this.currentURLlist.length-1) {
+        this.navActive(item)
       }
       this.url += "/" + item
       this.controllerName = this.routes[this.url]
@@ -165,6 +172,13 @@ export default class Router {
         this.controller(this.controllerName)
       }
     }
+  }
+  /**
+   * 导航激活显示
+   * @param  item 当前router对象
+   */
+  navActive(item) {
+    $(`.${item}`).addClass('fnavActive').siblings().removeClass('fnavActive')
   }
   /**
    * 404页面处理
@@ -229,13 +243,7 @@ export default class Router {
     }
     Event = null
   }
-  /**
-   * 导航激活显示
-   * @param  item 当前router对象
-   */
-//   navActive(item) {
-//     $('nav a').filter(`[href="#${item}"]`).closest('li').addClass('active').siblings().removeClass('active')
-//   }
+  
 }
 // export default class Router{
  

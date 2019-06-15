@@ -83,11 +83,20 @@ main{
         flex: 1;
         justify-content: center;
         align-items: center;
-        span{
-            font-size: .186665rem;
-            background-color: #ededed;
-            
+        a{
+            display:block;
+            height:100%;
+            width:100%;
+            text-align:center;
+            line-height:.37333rem;
+            color:#666;
+            span{
+                font-size: .186665rem;
+                background-color: #ededed;
+                
+            }
         }
+        
     }
 
     .loginBtn {
@@ -121,12 +130,25 @@ main{
             width:auto;
             a{
                 line-height: 30px;
+                display: block;
+                height:30px;
                 color:#333;
                 font-size:14px;
+                height:30px;
+                border-bottom:1px solid transparent;
             }
         }
     }
+}
+.navActive{
+    color:#b4282d !important;
+    border-bottom:2px solid #b4282d !important;
+}
+.fnavActive{
+    i,a{
+        color:#b4282d !important;
 
+    }
 }
 .navdown{
     width:50px;
@@ -201,13 +223,11 @@ main{
             padding-top:4px;
             align-items: center;
             color:#333;
-
             i{
                 font-size: 20px;
                 height: 25px;
-            color:#333;
-
-                
+                color:#333;
+                margin-right:0px;
             }
         }
         
@@ -249,7 +269,6 @@ main{
             
         }
     }
-   
 }
 .clasify{
     display:flex;
