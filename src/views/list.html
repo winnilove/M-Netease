@@ -1,0 +1,22 @@
+
+<div class="listC">
+    <div class="listCon">
+        <div class="headArrow">
+                <img src="/images/arrow.png"/>
+                <b>下拉刷新...</b>
+        </div>
+        {{each data}}
+        <div class="listDiv">
+            <img src="{{$value['listPicUrl']}}" alt="">
+            <p>{{$value['name']}}</p>
+            <span>￥{{$value['counterPrice']}}</span>
+        </div>
+        {{/each}}
+        <div class="footArrow">
+                <img src="/images/arrow.png"/>
+                <b>上拉加载更多...</b>
+        </div>
+    </div>
+</div>
+
+

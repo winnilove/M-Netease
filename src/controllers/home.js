@@ -31,11 +31,17 @@ function render() {
   })
   let scroll = new BScroll('.navCont',{
     scrollX : true,
+    click: true
   })
   $('.footnav').on("click","div",function(){
-    $(this).siblings().children().removeClass("fnavActive");
-    $(this).children().addClass("fnavActive");
+    $(this).siblings().children().removeClass("fnavActive")
+    $(this).children().addClass("fnavActive")
   })
+  $('.horScroll').on("click","li",function(){
+    $(this).siblings().children("a").removeClass("navActive")
+   $(this).children("a").addClass("navActive")
+  })
+
 }
 export default {
   render

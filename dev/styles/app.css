@@ -1212,3 +1212,48 @@ main {
 
 .sList:hover {
   background-color: #eee; }
+
+.listCon {
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between; }
+  .listCon .listDiv {
+    width: 100%;
+    padding: 0 10px;
+    margin: 10px auto;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    flex-flow: column nowrap; }
+    .listCon .listDiv img {
+      width: 40%;
+      text-align: center; }
+    .listCon .listDiv p {
+      font-size: 14px;
+      line-height: 30px; }
+    .listCon .listDiv span {
+      font-size: 12px;
+      line-height: 20px; }
+
+.listC {
+  height: 100%; }
+
+.headArrow, .footArrow {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  justify-content: center;
+  padding-top: 17px; }
+  .headArrow b, .footArrow b {
+    font-size: 12px;
+    line-height: 16px; }
+  .headArrow img, .footArrow img {
+    height: 16px;
+    width: 16px; }
+
+.up {
+  transform: rotate(180deg); }

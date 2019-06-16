@@ -7,7 +7,7 @@ import error from '../controllers/error'
 import people from '../controllers/people'
 import goods from '../controllers/goods'
 import search from '../controllers/search'
-
+import list from '../controllers/list'
 
 export default class Router {
   constructor(obj) {
@@ -22,6 +22,7 @@ export default class Router {
       '/index/details': details,
       '/index/search': search,
       '/index/home/classes': classes,
+      '/index/home/list':list,
       '/index/home/carts': carts,
       '/index/home/goods': goods,
       '/index/home/people': people,

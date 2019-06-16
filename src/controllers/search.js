@@ -1,6 +1,5 @@
 const searchTpl = require('../views/search.html')
 const searchListTpl = require('../views/searchList.html')
-import Router from '../router'
 import fetch from '../models/fetch'
 
 const render = () => {
@@ -28,8 +27,6 @@ const render = () => {
     })
     $('.resPost').html(html)
     $('.sList').on("click",function(){
-      console.log(111);
-      console.log($(this))
       $('.inputCon').val($(this)[0].innerText)
       hideSearchRes()
       rendSearchList()
