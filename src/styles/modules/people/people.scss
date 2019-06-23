@@ -1,0 +1,144 @@
+.perhead{
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #aaa;
+    h3{
+        font-size: 20px;
+        font-weight: 300;
+        
+    }
+}
+
+/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:#ffffff;
+	z-index: 9999;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	overflow: hidden;
+	border: none;
+	background:url(../images/icon_cols.png) no-repeat 0 0/30px 30px;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+
+/* Effects */
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.7s, visibility 0s 0.7s;
+	transition: transform 0.7s, visibility 0s 0.7s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.7s;
+	transition: transform 0.7s;
+}
+
+.lay-right{width: 100%;overflow:hidden;}
+.asideMenu{background: #4eabe8;width: 100%; }
+.aCont{overflow:hidden;width: 200px;position: relative;margin:0 auto;z-index: 9999;}
+.aHead{height: 120px;position: relative;}
+.aHead span{position: absolute;width: 100%;height: 150px;display: block;left: 50%;top: 50%;margin-top: -49px;margin-left: -100px;text-align: center;}
+.aHead span img{width: 70px;height:70px;display: block;margin: 0px auto; border-radius:50px; -webkit-border-radius:50px; -moz-border-radius:50px;}
+.aHead span a,.aHead span em,.version a,.version em{font-style: normal;font-size: 16px;/**从14px改到16px;**/line-height: 40px;color: #fff;font-weight: normal;}
+.aHead span font{vertical-align:middle; font-style: normal;font-size: 16px;/**从14px改到16px;**/line-height: 40px;color: #fff;}
+.aHead span em,.version em{color: #fff;padding: 0px 10px;}
+.content-slide {padding: 8px 10px;color: #fff;}
+.content-slide>a {width: 25%;float: left;text-align: center;color: #000000;overflow: hidden;margin-bottom: 15px;}
+.title {font-size: 12px;margin-top:3px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.ico img{ width:62px; height:62px;border-radius: 0;}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+/*宽度*/
+.w{ min-width:320px; height:auto;}
+/*页面加载*/
+#preloader {position:fixed;z-index:2500;top:0;left:0;right:0;bottom:0;background-color:#fff; z-index:999999; }
+#status {position:fixed;z-index:999999;width:250px;height:250px;position:absolute;left:50%; top:50%; background-image:url(../images/status.gif); background-size:32px 32px;
+background-repeat:no-repeat;background-position:center;margin:-125px 0 0 -125px; }
+#status p{top:70%;}
+#status em{font-size:10px!important;display:block;font-style:normal;}
+.center-text{	text-align:center;	}
+/*页面背景*/
+.bg_a{ background:url(../images/bg_a.jpg) center center repeat-y;}
+/*图片加载*/
+.lazy_load{background-image:url(../images/load.gif); background-repeat:no-repeat; background-position:center;background-color:#fff;}
+/*header*/
+.header{ height:44px; background:#4eabe8;position: relative;z-index: 10;}
+.new-a-back {height: 32px;left: 6px;position: absolute;top: 6px;width: 45px;}
+.new-a-back span { background:url(../images/icon_fh.png) no-repeat 0px 0px / 18px 18px;display:block;height: 18px;margin-top: 7px;text-indent:17px; line-height:18px;width: 45px; color:#FFF; font-size:14px;}
+.header h2 {color: #fff;font-size: 16px;font-weight: normal;height: 44px;line-height: 44px; text-align: center; font-weight:bold;}
+.new-a-jd { height: 30px;position: absolute; right: 7px;top: 6px; width: 37px;}
+.new-a-jd span {background: url("../images/icon2b.png") no-repeat -125px -24px / 180px 180px;display: inline-block; height: 21px;margin: 5px 0 0 8px;text-indent: -9999px;width: 21px;}
+
+.page{ padding:0 10px;}
+.main {padding: 15px 0 80px;}
+.main .item {margin-bottom: 10px;position: relative;width: 100%;}
+/*.main .item .item_name{ position:absolute; left:0 ; height:44px; top:0; width:80px; line-height:44px; text-indent:10px; font-size:14px;}*/
+.main .item .txt-username,.main .item .txt-password,.main .item .txt-password ,.main .item .txt-password_PwdTwo,.main .item .txt-captcha{ text-indent:10px;}
+.main .item .txt-phone {text-indent:80px;}
+.main .item .txt-input {background: none repeat scroll 0 0 #fff;border: 1px solid #d7d7d7;border-radius:5px; color: #252525;font-size: 14px;height: 44px;width: 100%;}
+.main .item-username .input-close {right: 7px;}
+.main .item .input-close {background: url(../images/u_close.png) no-repeat scroll center center / 10px 10px ;cursor: pointer;display: block;height: 30px;position: absolute;top: 6px;width: 30px;}
+.main .item-password .btn-off {background: url("../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;}
+.main .item-password .tp-btn {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 8px; width: 51px; z-index: 1;}
+.main .item-password .btn-on {background: url("../images/u_s2.png") no-repeat scroll 0 0 / 51px 35px;}
+.main .item-password .btn-off_PwdTwo {background: url("../images/u_s1.png") no-repeat scroll 0 0 / 51px 35px;}
+.main .item-password .tp-btn_PwdTwo {cursor: pointer;display: block;height: 35px;position: absolute; right: 10px;top: 8px; width: 51px; z-index: 1;}
+.main .item-password .btn-on_PwdTwo {background: url("../images/u_s2.png") no-repeat scroll 0 0 / 51px 35px;}
+.main .item-login-option {font-size: 14px; margin-bottom:5px;}
+.main .item-login-option .retrieve-password {float: right;text-align: right;width: 50%;position: absolute;top:110px;right:68px;}
+.main .item-login-option .retrieve-password a {color: #4eabe8;font-size: 15px;text-decoration: underline;}
+.main .item-login-other{}
+.main .item-login-other dt {color: #666;font-size: 14px; margin-bottom: 13px;}
+.main .item-login-other dd .qq {width: 20%;}
+.main .item-login-other dd a {float: left;}
+.main .item-login-other dd a span {display:block;height: 40px;overflow: hidden; width: 40px;}
+.ui-btn-wrap { padding-top:5px; padding-bottom:10px;}
+.ui-btn-lg {cursor:pointer;border-radius:5px;display: block;font-size: 14px;height: 40px;line-height: 40px;width: 100%; text-align:center;}
+.ui-btn-primary {background-clip: padding-box;background-color: #4eabe8;border-color: #4eabe8;color: #fff;}
+.ui-btn-danger{background-clip: padding-box;background-color: #de3b8a;border-color: #de3b8a;color: #fff;}
+.main .item-captcha {margin-bottom: 10px;}
+.main .item-captcha .input-info {margin-bottom: 10px;}
+.main .item-captcha .input-close {right: 79px;}
+.main .item-captcha #captcha-img { border-left: 1px solid #d7d7d7;height: 25px; padding-left: 7px; position: absolute;right: 0;top: 9px;width: 79px;}
+.main .item-captcha .err-tips {color: #848689;font-size: 13px;margin: 13px 0 0px;}
+.main .item-captcha .err-tips a { color: #0052ce; text-decoration: underline;}

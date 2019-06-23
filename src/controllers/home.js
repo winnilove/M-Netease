@@ -1,7 +1,16 @@
 const homeTpl = require('../views/home.html')
+const footNavTpl = require('../views/footnav.html')
+const headNavTpl = require('../views/headnav.html')
+const headLogoTpl = require('../views/headlogo.html')
+
+
 function render() {    
   $('#index').html(homeTpl)
-  
+  $('.footnav').html(footNavTpl)
+  $('.navCon').html(headNavTpl)
+  $('.head').html(headLogoTpl)
+
+
     var mySwiper = new Swiper ('.swiper-container', {
       speed:1000,
       direction: 'horizontal',

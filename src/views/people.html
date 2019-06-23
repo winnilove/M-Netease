@@ -1,1 +1,31 @@
-<div class="per">个人中心</div>
+
+<div class="perhead"><h3>网易严选</h3></div>
+<header>
+    <div class="header"> <a class="new-a-back" href="javascript:history.back();"> <span>返回</span> </a>
+      <h2>登录</h2>
+      <a class="new-a-jd" id="trigger-overlay" href="javascript:void(0)"> <span>导航菜单</span> </a>
+      </div>
+  </header>
+  <!--header 结束-->
+    <div class="main">
+      <form id="frm_login" method="post" action="">
+        <div class="item item-username">
+          <input id="username" class="txt-input txt-username" type="text" placeholder="请输入用户名/邮箱/手机号" value="" name="username">
+          <b class="input-close" style="display: none;"></b> </div>
+        <div class="item item-password">
+          <input id="password" class="txt-input txt-password ciphertext" type="password" placeholder="请输入密码" name="password" style="display: inline;">
+          <input id="ptext" class="txt-input txt-password plaintext" type="text" placeholder="请输入密码" style="display: none;" name="ptext">
+          <b class="tp-btn btn-off"></b> </div>
+        <div class="item item-login-option"> <span class="retrieve-password"> <a class="" href="#"> 找回密码</a> </span>
+          <div class="clr"></div>
+        </div>
+        <div class="ui-btn-wrap"> <a class="ui-btn-lg ui-btn-primary" href="#">用户登录</a> </div>
+        <div class="ui-btn-wrap"> <a class="ui-btn-lg ui-btn-danger" href="#/index/home/reg">没有账号？立即注册</a> </div>
+        <div class="item item-login-other">
+          <dl>
+            <dt>其它登录方式</dt>
+            <dd> <a class="qq" href="#"> <span><img alt="" src="skin/images/login_qq.png" width="40" height="40"></span> </a> <a class="weibo" href="#"> <span><img alt="" src="skin/images/login_wb.png" width="40" height="40"></span> </a> </dd>
+          </dl>
+        </div>
+      </form>
+    </div>

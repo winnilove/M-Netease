@@ -56,15 +56,19 @@ function clear(target) {
 function webserver(){
     return src("./dev")
     .pipe(gulpWebserver({
-        port:8080,
+        port:8989,
         livereload:true,
         middleware : [
+            // proxy('/api',{
+            //     target:'http://m.you.163.com/',
+            //     changeOrigin : true,
+            //     pathRewrite : {
+            //         '^/api' : ''
+            //     }
+            // })
             proxy('/api',{
-                target:'http://m.you.163.com/',
+                target:'http://localhost:3000',
                 changeOrigin : true,
-                pathRewrite : {
-                    '^/api' : ''
-                }
             })
         ]
     }))

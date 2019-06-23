@@ -8,6 +8,8 @@ import people from '../controllers/people'
 import goods from '../controllers/goods'
 import search from '../controllers/search'
 import list from '../controllers/list'
+import reg from '../controllers/reg'
+
 
 export default class Router {
   constructor(obj) {
@@ -26,7 +28,7 @@ export default class Router {
       '/index/home/carts': carts,
       '/index/home/goods': goods,
       '/index/home/people': people,
-
+      '/index/home/reg': reg,
     }
     
     // 组件挂载根元素
