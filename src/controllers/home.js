@@ -51,6 +51,9 @@ function render() {
    $(this).children("a").addClass("navActive")
   })
 
+
+  //socket.io
+  
 }
 export default {
   render

@@ -10,6 +10,14 @@ import search from '../controllers/search'
 import list from '../controllers/list'
 import reg from '../controllers/reg'
 
+var io = require('socket.io');
+
+var socket = io.connect('http://localhost:8082')
+socket.on('message',function(mag){
+  console.log(0)
+  
+})
+
 
 export default class Router {
   constructor(obj) {

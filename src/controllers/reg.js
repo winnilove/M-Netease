@@ -10,7 +10,11 @@ const render = async() => {
           type: 'POST',
           data: $('#frm_login').serialize(),
           success: (result) => {
-            console.log(result)
+            $('.main').html("注册成功，3秒后进入登录页面")
+            setTimeout(()=>{
+              window.location.hash='#/index/home/people'
+            },3000)
+            
           },
 
       })

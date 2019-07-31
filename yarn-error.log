@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add better-scroll --dev
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add io
 
 PATH: 
-  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\QuickTime\QTSystem;D:\nginx-1.16.0;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Python27;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.6.0_45\bin;C:\Program Files\Java\jdk1.6.0_45\jre\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\nginx-1.16.0
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Administrator\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\QuickTime\QTSystem;D:\nginx-1.16.0;D:\MongoDB\Server\4.0\bin;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Python27;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.6.0_45\bin;C:\Program Files\Java\jdk1.6.0_45\jre\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Administrator\AppData\Local\Yarn\bin;D:\nginx-1.16.0;D:\MongoDB\Server\4.0\bin
 
 Yarn version: 
   1.16.0
@@ -14,8 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: connect ETIMEDOUT 104.16.20.35:443
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1113:14)
+  Error: EPERM: operation not permitted, unlink 'c:\phpStudy\PHPTutorial\WWW\03project\Netease\node_modules\node-sass\vendor\win32-x64-64\binding.node'
 
 npm manifest: 
   {
